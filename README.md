@@ -1,6 +1,6 @@
-# movies_app
+# Movies With Flutter
 
-A new Flutter project.
+A simple application using rest api and list of data.
 
 ## Getting Started
 
