@@ -37,7 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   lottie: ^2.6.0
   google_fonts: ^6.0.0
+<<<<<<< HEAD
   flutter_snake_navigationbar: ^0.6.1
+=======
+>>>>>>> 8820a70 (last upadate)
   dio: ^5.3.3
   shared_preferences: ^2.2.2
   shimmer: ^3.0.0
@@ -79,6 +82,10 @@ flutter:
     - assets/images/movie7.jpg
     - assets/images/movie8.jpg
     - assets/images/signup.png
+<<<<<<< HEAD
+=======
+    - assets/images/netflix.png
+>>>>>>> 8820a70 (last upadate)
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

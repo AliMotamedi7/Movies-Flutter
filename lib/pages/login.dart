@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import 'package:dio/dio.dart';
+=======
+// ignore_for_file: must_be_immutable
+
+>>>>>>> 8820a70 (last upadate)
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,7 +17,10 @@ class Login extends StatefulWidget {
   Login({super.key, this.sharedPreferences});
   SharedPreferences? sharedPreferences;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8820a70 (last upadate)
   @override
   State<Login> createState() => _LoginState();
 }
@@ -140,8 +148,13 @@ class _LoginState extends State<Login> {
                     margin: const EdgeInsets.symmetric(horizontal: 20),
                     child: ElevatedButton(
                       onPressed: () {
+<<<<<<< HEAD
                         LoginService.signIn(
                             _username.text, _password.text, widget.sharedPreferences!);
+=======
+                        LoginService.signIn(_username.text, _password.text,
+                            widget.sharedPreferences!);
+>>>>>>> 8820a70 (last upadate)
                         if (isLogin == true) {
                           Navigator.pushAndRemoveUntil(
                               context,

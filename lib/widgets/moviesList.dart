@@ -1,10 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:movies_app/pages/movie_page.dart';
 
 class MoviesList extends StatelessWidget {
   MoviesList({super.key, required this.movies, required this.movieName});
 
   String movies;
   String movieName;
+
+// ignore: must_be_immutable
+class MoviesList extends StatelessWidget {
+  MoviesList({
+    super.key,
+    required this.movies,
+    required this.movieName,
+    required this.id,
+  });
+
+  String movies;
+  String movieName;
+  int id;
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +30,14 @@ class MoviesList extends StatelessWidget {
               "image": movies,
               "name": movieName,
             });
+        width: 200,
+        child: GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (_) {
+              return MoviePage(
+                movie_id: id,
+              );
+            }));
           },
           child: Container(
             margin: const EdgeInsets.only(top: 20, right: 15),
@@ -32,6 +54,7 @@ class MoviesList extends StatelessWidget {
         ));
   }
 }
+<<<<<<< HEAD
 
 class GenresMoviesList extends StatelessWidget {
   GenresMoviesList({super.key, required this.movies, required this.movieName});
@@ -65,3 +88,5 @@ class GenresMoviesList extends StatelessWidget {
         ));
   }
 }
+=======
+>>>>>>> 8820a70 (last upadate)
